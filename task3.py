@@ -8,13 +8,13 @@ while(True):
             print(f"IP address {ip} pinging successfully.")
             with open("ip.txt", "a") as file:
                 file.write(ip + '\n')
-                print("Email added to the file.")
+                print("IP added to the file.")
             print("------------------------------------------")
         else:
             print(f"Pinging IP address {ip} unsuccessful.")
             with open("invalid_ip.txt", "a") as file:
                 file.write(ip + '\n')
-                print("Email added to the file.")
+                print("IP added to the file.")
             print("------------------------------------------")
     elif input_ip.lower() == "no" or input_ip.lower() == "exit":
         print("EXITED")
