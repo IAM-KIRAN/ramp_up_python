@@ -21,15 +21,11 @@ while True:
             print("Invalid email address.")
     elif input_string.lower() == "no" or "exit":
         print("Exited")
-        file_path = "email.txt"  # Replace with your file path
+        file_path = "email.txt"
         try:
             with open(file_path, "r") as file:
-                # Read the content of the file
                 file_content = file.read()
-
-                # Print the content
                 print(file_content)
-
         except FileNotFoundError:
             print(f"File '{file_path}' not found.")
         except Exception as e:
