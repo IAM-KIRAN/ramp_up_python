@@ -33,4 +33,3 @@ while True:
         break
     else:
         print("Enter valid input.")
-
