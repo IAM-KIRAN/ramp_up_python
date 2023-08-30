@@ -1,0 +1,29 @@
+Skill,Value,Color
+Python,30,Dark Green
+Al ML Stack,24,One level below dark green
+Django,7,One Level Above Light Green
+Java,26,Dark Green
+Spring Boot,5,One Level Above Light Green
+Angular JS,27,Dark Green
+Node JS,1,Light green
+php,21,One level below dark green
+Mongo DB,13,Two level above Light green
+Influx DB,0,White
+MySqI / Postgress Sql,14,Two level above Light green
+Warrior Framework,9,One Level Above Light Green
+Robot Framework,12,Two level above Light green
+AWS / Cloud,5,Light green
+Optical,2,Light green
+L2 / L3,4,Light green
+QA-CLI Aurormation,0,White Light
+Java Full Stack Developer,0,White
+Mean Stack Developer,0,White
+IOS Developer,15,Two level below dark green
+Android Developer,25,One level below dark green
+Go Developer,5,One Level Above Light Green
+IOT,25,One level below dark green
+Dockers,10,One Level Above Light Green
+Kubernetes,3,Light green
+Jenkins,19,Two Level below dark Green
+TMF API,1,Light green
+Angular 14,29,Dark Green

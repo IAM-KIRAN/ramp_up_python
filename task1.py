@@ -20,11 +20,10 @@ def totalduplicatechar(a):
 def totalwords(a):
     words = user_input.split()
 
-    alphabetic_words = [word for word in words if word.isalpha()]
-
-    total_num_of_words = len(alphabetic_words)
-    #print("TOTAL NUMBER OF WORDS: ",total_num_of_words)
+    total_num_of_words = len(words)
+    print("TOTAL NUMBER OF WORDS: ", total_num_of_words)
     return total_num_of_words
+
 
 
 def totalduplicatewords(a):
@@ -42,7 +41,7 @@ def totalduplicatewords(a):
 def reverse_characters(a):
     reversed_statement = a[::-1]
     print("REVERSED CHARACTER: ",reversed_statement)
-    return
+
 
 
 def reverse_words(statement):
@@ -65,8 +64,11 @@ def remove_duplicates(statement):
     new_statement = ""
 
     for char in statement:
-        if char.lower() not in unique_chars and char != " ":
-            unique_chars.append(char.lower())
+        if char == " ":
+            unique_chars.append(char)
+            new_statement += char
+        elif char.lower() not in unique_chars: #and char != " ":
+            unique_chars.append(char)
             new_statement += char
 
     print("REMOVED DUPLICATE STRING: ", new_statement)
