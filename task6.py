@@ -1,12 +1,20 @@
 import math
 import sys
 
-inputs = list(map(float, input("Enter the measurements: ").split()))
+
+def Ginput():
+    try:
+        inputs = list(map(float, input("Enter the measurements: ").split()))
+
+    except ValueError or NameError or UnboundLocalError:
+        print("Enter only positive integer.")
+
+    return inputs
 
 
 
 
-class Shape:
+class Shape():
     def calculate_area(self):
         pass
 
@@ -25,6 +33,9 @@ class Triangle(Shape):
 class Circle(Shape):
     def calculate_area(self, radius):
         return math.pi * radius ** 2
+
+
+inputs = Ginput()
 
 
 if len(inputs) == 1:
