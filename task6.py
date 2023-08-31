@@ -8,6 +8,7 @@ def Ginput():
 
     except ValueError or NameError or UnboundLocalError:
         print("Enter only positive integer.")
+        sys.exit()
 
     return inputs
 
