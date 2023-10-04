@@ -1,0 +1,36 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-time Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+</head>
+<body>
+    <h1>Real-time Chat</h1>
+    <ul id="message-list"></ul>
+    <input id="message-input" autocomplete="off" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('message', function(message) {
+            addToMessageList(message);
+        });
+
+        function sendMessage() {
+            var message = document.getElementById('message-input').value;
+            socket.emit('message', message);
+            document.getElementById('message-input').value = '';
+        }
+
+        function addToMessageList(message) {
+            var ul = document.getElementById('message-list');
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(message));
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+</html>

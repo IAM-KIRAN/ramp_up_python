@@ -1,0 +1,12 @@
+Hello,
+
+This is a sample text file with some example email addresses:
+
+1. John Doe:johndoe@example.com4231
+2. Alice Smith: alice.smith@email.com
+3. Bob Johnson: bob123@hotmail.com
+
+Feel free to use this text file for testing purposes.
+
+Best regards,
+Your Name
